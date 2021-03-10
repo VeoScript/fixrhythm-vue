@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen flex items-center justify-center p-20 bg-gray-50">
-    <div class="block xs:hidden sm:hidden md:hidden lg:hidden">
+    <div class="block ml-10 xs:hidden sm:hidden md:hidden lg:hidden">
       <div class="text-5xl mb-3 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
       <div class="text-xl">Develop your skills in music. <br/> Compose your song and make it public to the world.</div>
     </div>
