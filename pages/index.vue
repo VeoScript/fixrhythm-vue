@@ -6,6 +6,9 @@
     </div>
     <div class="flex flex-col">
       <div class="hidden xs:block sm:block md:block lg:block">
+        <div class="flex justify-center">
+          <img class="w-10 text-center" src="~/assets/img/logo.png" alt="fixrhythm">
+        </div>
         <div class="text-4xl text-center font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
         <div class="text-xs text-center mt-2">Poetry, Arts & Music</div>
       </div>
