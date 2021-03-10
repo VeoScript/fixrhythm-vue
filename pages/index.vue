@@ -34,9 +34,6 @@
         <div class="form-control w-full mb-2">
           <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none">Create Account</button>
         </div>
-        <div class="form-control w-full mb-2">
-          <p>Designed and Developed by Jerome Villaruel</p>
-        </div>
       </div>
     </div>
   </div>
