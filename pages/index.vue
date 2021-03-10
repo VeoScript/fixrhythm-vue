@@ -11,7 +11,7 @@
       </div>
       <div class="form-card border shadow-lg p-10 mt-5 ml-10 mr-10 bg-white">
         <div class="form-control">
-          <div class="font-semibold text-3xl sm:text-base md:text-base lg:text-base mb-5">Sign in</div>
+          <div class="font-semibold text-3xl sm:text-base md:text-base lg:text-base mb-5">Log in</div>
         </div>
         <div class="form-control w-full mb-2">
           <input class="p-3 w-72 border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="text" placeholder="Email" />
@@ -20,13 +20,16 @@
           <input class="p-3 w-72 border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="password" placeholder="Password" />
         </div>
         <div class="form-control w-full mb-2">
-          <button class="p-3 w-72 bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Sign in</button>
+          <button class="p-3 w-72 bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Log in</button>
         </div>
         <div class="form-control w-full text-center mt-3 mb-3">
-          <nuxt-link class="text-sm text-gray-700 hover:underline" to="/forgot-password">Forgot Password?</nuxt-link>
+          <nuxt-link class="text-sm text-gray-700 hover:underline" to="/">Forgot Password?</nuxt-link>
         </div>
         <div class="form-control w-full text-center mb-2">
           <hr />
+        </div>
+        <div class="form-control w-full mb-2">
+          <button class="p-3 w-72 bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none">Create Account</button>
         </div>
       </div>
     </div>
