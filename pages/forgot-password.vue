@@ -5,7 +5,7 @@
         <div class="top flex">
           <div class="button">
             <nuxt-link to="/">
-              <svg class="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              <svg class="w-6 h-6 mt-1.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
             </nuxt-link>
           </div>
           <div class="text-2xl mb-5 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
