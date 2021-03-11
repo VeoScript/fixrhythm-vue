@@ -12,9 +12,9 @@
         <div class="text-4xl text-center font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
         <div class="text-xs text-center mt-2">Poetry, Arts & Music</div>
       </div>
-      <div class="form-card w-96 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white">
+      <div class="form-card w-96 xs:w-80 sm:w-80 md:w-80 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white">
         <div class="form-control">
-          <div class="font-semibold text-2xl sm:text-base md:text-base lg:text-base mb-5">Log in</div>
+          <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">Log in</div>
         </div>
         <div class="form-control w-full mb-2">
           <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="text" placeholder="Email" />
@@ -23,7 +23,7 @@
           <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="password" placeholder="Password" />
         </div>
         <div class="form-control w-full mb-2">
-          <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Log in</button>
+          <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Login</button>
         </div>
         <div class="form-control w-full text-center mt-3 mb-3">
           <nuxt-link class="text-sm text-gray-700 hover:underline" to="/">Forgot Password?</nuxt-link>
@@ -33,6 +33,9 @@
         </div>
         <div class="form-control w-full mb-2">
           <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none">Create Account</button>
+        </div>
+        <div class="form-control w-full -mb-3">
+          <p class="mr-2 text-right text-xs text-gray-500">Fixrhythm &copy; {{ new Date().getFullYear() }}</p>
         </div>
       </div>
     </div>
