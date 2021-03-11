@@ -53,10 +53,13 @@
             <span class="text-white text-lg font-bold">Logout</span>
           </div>
         </nuxt-link>
-        <div class="btn-create text-center">
+        <div class="btn-create mt-10 text-center">
           <button class="font-bold p-3 w-full rounded-3xl bg-red-600 hover:bg-red-700 focus:outline-none">
             Compose
           </button>
+        </div>
+        <div class="w-full mt-10">
+          <p class="mr-2 text-center text-xs text-gray-500">&copy; {{ new Date().getFullYear() }} Fixrhythm, <br/> <span class="font-thin">Developed with &#10084; by VEOSCRIPT</span></p>
         </div>
       </div>
     </div>
