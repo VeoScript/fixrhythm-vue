@@ -55,7 +55,7 @@
         </nuxt-link>
         <div class="btn-create text-center">
           <button class="font-bold p-3 w-full rounded-3xl bg-red-600 hover:bg-red-700 focus:outline-none">
-            Create
+            Compose
           </button>
         </div>
       </div>
