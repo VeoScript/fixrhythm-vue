@@ -40,7 +40,9 @@
           <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Sign Up</button>
         </div>
         <div class="form-control w-full -mb-3">
-          <p class="mr-2 text-right text-xs text-gray-500">Fixrhythm &copy; {{ new Date().getFullYear() }}</p>
+          <p class="mr-2 text-center text-xs font-normal text-gray-500">
+            By clicking Sign Up, you agree to our <nuxt-link class="hover:underline text-red-600" to="#">Terms</nuxt-link>, <nuxt-link class="hover:underline text-red-600" to="#">Data Policy</nuxt-link> and <nuxt-link class="hover:underline text-red-600" to="#">Cookies Policy</nuxt-link>. <br/> You may receive Email Notifications from us and can opt out any time.
+          </p>
         </div>
       </div>
     </div>
