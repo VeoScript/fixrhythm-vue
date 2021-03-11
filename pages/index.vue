@@ -17,13 +17,13 @@
           <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">Log in</div>
         </div>
         <div class="form-control w-full mb-2">
-          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="text" placeholder="Email" />
+          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" v-model="loginData.email" type="text" placeholder="Email" />
         </div>
         <div class="form-control w-full mb-2">
-          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="password" placeholder="Password" />
+          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" v-model="loginData.password" type="password" placeholder="Password" />
         </div>
         <div class="form-control w-full mb-2">
-          <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Login</button>
+          <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none" @click="onLogin">Login</button>
         </div>
         <div class="form-control w-full text-center mt-3 mb-3">
           <nuxt-link class="text-sm text-gray-700 hover:underline" to="forgot-password">Forgot Password?</nuxt-link>
@@ -45,5 +45,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      loginData: {
+        email: '',
+        password: ''
+      }
+    }
+  },
+  methods: {
+    onLogin() {
+      this.$router.push('homepage')
+    }
+  }
+}
 </script>
