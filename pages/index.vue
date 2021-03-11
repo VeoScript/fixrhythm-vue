@@ -26,13 +26,15 @@
           <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Login</button>
         </div>
         <div class="form-control w-full text-center mt-3 mb-3">
-          <nuxt-link class="text-sm text-gray-700 hover:underline" to="/forgot-password">Forgot Password?</nuxt-link>
+          <nuxt-link class="text-sm text-gray-700 hover:underline" to="forgot-password">Forgot Password?</nuxt-link>
         </div>
         <div class="form-control w-full text-center mb-5">
           <hr />
         </div>
         <div class="form-control w-full mb-2">
-          <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none">Create Account</button>
+          <nuxt-link to="create-account">
+            <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none">Create Account</button>
+          </nuxt-link>
         </div>
         <div class="form-control w-full -mb-3">
           <p class="mr-2 text-right text-xs text-gray-500">Fixrhythm &copy; {{ new Date().getFullYear() }}</p>
