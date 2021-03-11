@@ -12,7 +12,7 @@
         <div class="text-4xl text-center font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
         <div class="text-xs text-center mt-2">Poetry, Arts & Music</div>
       </div>
-      <div class="form-card w-96 xs:w-80 sm:w-80 md:w-80 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white">
+      <div class="form-card rounded-xl w-96 xs:w-80 sm:w-80 md:w-80 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white">
         <div class="form-control">
           <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">Log in</div>
         </div>
@@ -26,7 +26,7 @@
           <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Login</button>
         </div>
         <div class="form-control w-full text-center mt-3 mb-3">
-          <nuxt-link class="text-sm text-gray-700 hover:underline" to="/">Forgot Password?</nuxt-link>
+          <nuxt-link class="text-sm text-gray-700 hover:underline" to="/forgot-password">Forgot Password?</nuxt-link>
         </div>
         <div class="form-control w-full text-center mb-5">
           <hr />
