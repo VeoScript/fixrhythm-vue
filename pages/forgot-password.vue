@@ -11,7 +11,7 @@
           <div class="text-2xl mb-5 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
         </div>
         <div class="form-control">
-          <div class="font-semibold text-gray-600 text-lg sm:text-xl md:text-xl lg:text-xl mb-2">Forgot Password</div>
+          <div class="font-semibold text-gray-600 text-xl sm:text-lg md:text-lg lg:text-lg mb-2">Forgot Password</div>
           <div class="font-normal text-gray-600 text-sm sm:text-xs md:text-xs lg:text-xs mb-5">
             Enter your email address and we'll send you the instruction for resetting your password.
           </div>
