@@ -12,7 +12,7 @@
         <div class="text-4xl text-center font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
         <div class="text-xs text-center mt-2">Poetry, Arts & Music</div>
       </div>
-      <div class="form-card rounded-xl w-96 xs:w-80 sm:w-80 md:w-80 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white">
+      <form class="form-card rounded-xl w-96 xs:w-80 sm:w-80 md:w-80 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white" @submit.stop.prevent="onLogin">
         <div class="form-control">
           <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">Log in</div>
         </div>
@@ -23,7 +23,7 @@
           <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" v-model="loginData.password" type="password" placeholder="Password" />
         </div>
         <div class="form-control w-full mb-2">
-          <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none" @click="onLogin">Login</button>
+          <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none" type="submit">Login</button>
         </div>
         <div class="form-control w-full text-center mt-3 mb-3">
           <nuxt-link class="text-sm text-gray-700 hover:underline" to="forgot-password">Forgot Password?</nuxt-link>
@@ -39,7 +39,7 @@
         <div class="form-control w-full -mb-3">
           <p class="mr-2 text-right text-xs text-gray-500">Fixrhythm &copy; {{ new Date().getFullYear() }}</p>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </template>
@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     onLogin() {
-      this.$router.push('homepage')
+      this.$router.push('home')
     }
   }
 }
