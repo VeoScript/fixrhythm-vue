@@ -25,6 +25,18 @@
           </div>
         </div>
         <div class="form-control w-full mb-2">
+          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="text" placeholder="Screen Name" />
+        </div>
+        <div class="form-control w-full mb-2">
+          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="text" placeholder="Email" />
+        </div>
+        <div class="form-control w-full mb-2">
+          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="password" placeholder="Create Password" />
+        </div>
+        <div class="form-control w-full mb-2">
+          <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="password" placeholder="Re-enter Password" />
+        </div>
+        <div class="form-control w-full mb-2">
           <button class="p-3 w-full bg-gray-900 rounded-lg text-white hover:bg-gray-800 focus:outline-none">Sign Up</button>
         </div>
         <div class="form-control w-full -mb-3">
