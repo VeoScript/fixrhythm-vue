@@ -8,7 +8,7 @@
           </nuxt-link>
           <ul>
             <li v-for="(link, i) in links" :key="i">
-              <nuxt-link class="flex hover:bg-gray-800 p-3 mb-2 w-full rounded-3xl" :class="$route.path === link.goto ? 'bg-gray-800' : 'bg-gray-900'" :to="link.goto">
+              <nuxt-link class="flex p-3 mb-2 w-full rounded-3xl transition duration-300 ease-in-out hover:bg-gray-800" :class="$route.path === link.goto ? 'bg-gray-800' : 'bg-gray-900'" :to="link.goto">
                 <span v-html="link.icon"></span>
                 <span class="text-lg font-bold">{{ link.title }}</span>
               </nuxt-link>
