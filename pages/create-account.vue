@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen flex items-center justify-center">
+  <div class="h-screen mt-16 mb-16 lg:m-0 xl:m-0 p-5 flex items-center justify-center">
     <div class="flex">
-      <div class="form-card rounded-xl w-full xs:w-80 sm:w-80 md:w-80 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white">
+      <div class="form-card w-full rounded-xl border shadow-lg p-5 bg-white">
         <div class="top flex">
           <div class="button">
             <nuxt-link to="/">
@@ -16,7 +16,7 @@
             Start your fantasies in poetry and music composition.
           </div>
         </div>
-        <div class="flex xs:block sm:block md:block md:space-x-0 space-x-2">
+        <div class="block md:flex md:space-x-2">
           <div class="form-control w-full mb-2">
             <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" type="text" placeholder="First Name" />
           </div>
