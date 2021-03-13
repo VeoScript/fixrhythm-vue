@@ -7,11 +7,9 @@
 
 <script>
 import Sidebar from '~/components/layouts/Sidebar.vue'
-import Bottombar from '~/components/layouts/Bottombar.vue'
 export default {
   components: {
-    Sidebar,
-    Bottombar
+    Sidebar
   }
 }
 </script>
