@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="bottomNav fixed bottom-0 w-full">
+      <div class="mobile-display fixed bottom-0 w-full">
         <nav class="md:hidden bottom-0 w-full bg-gray-900 text-xs">
           <ul class="flex justify-around items-center text-white text-center opacity-75 text-lg font-bold">
             <li class="p-4 hover:bg-gray-500">
