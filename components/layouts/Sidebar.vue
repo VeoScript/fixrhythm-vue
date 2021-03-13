@@ -7,8 +7,8 @@
             <div class="text-4xl mb-10 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
           </nuxt-link>
           <ul>
-            <li v-for="(link, i) in links" :key="i" @click.prevent="setLink = link.title">
-              <nuxt-link class="flex hover:bg-gray-800 p-3 mb-2 w-full rounded-3xl" :class="`${link.title === setLink ? 'bg-gray-800' : 'bg-gray-900'}`" :to="link.goto">
+            <li v-for="(link, i) in links" :key="i">
+              <nuxt-link class="flex hover:bg-gray-800 p-3 mb-2 w-full rounded-3xl" :class="$route.path === link.goto ? 'bg-gray-800' : 'bg-gray-900'" :to="link.goto">
                 <span v-html="link.icon"></span>
                 <span class="text-lg font-bold">{{ link.title }}</span>
               </nuxt-link>
@@ -28,7 +28,7 @@
     <div class="mobile-display fixed bottom-0 w-full">
       <nav class="md:hidden bottom-0 w-full bg-gray-900 text-xs">
         <ul class="flex justify-around items-center text-white text-center opacity-75 text-lg font-bold">
-          <li v-for="(linkmob, i) in linksMobile" :key="i" @click.prevent="setLink = linkmob.title">
+          <li v-for="(linkmob, i) in linksMobile" :key="i">
             <nuxt-link class="flex p-4 hover:bg-gray-500" :to="linkmob.goto">
               <span v-html="linkmob.icon"></span>
             </nuxt-link>
