@@ -8,7 +8,7 @@
           </nuxt-link>
           <ul>
             <li v-for="(link, i) in links" :key="i" @click.prevent="setLink = link.title">
-              <nuxt-link class="flex hover:bg-gray-800 p-3 mb-2 w-full rounded-3xl" :to="link.goto">
+              <nuxt-link class="flex hover:bg-gray-800 p-3 mb-2 w-full rounded-3xl" :class="`${link.title === setLink ? 'bg-gray-800' : 'bg-gray-900'}`" :to="link.goto">
                 <span v-html="link.icon"></span>
                 <span class="text-lg font-bold">{{ link.title }}</span>
               </nuxt-link>
