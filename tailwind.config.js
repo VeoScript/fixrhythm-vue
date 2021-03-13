@@ -10,12 +10,12 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      'xs': {'max': '250px'},
-      'sm': {'max': '320px'},
-      'md': {'max': '868px'},
-      'lg': {'max': '1024px'},
-      'xl': {'max': '1280px'},
-      '2xl': {'max': '1536px'},
+      'xs': '250px',
+      'sm': '320px',
+      'md': '868px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
   },
   variants: {
