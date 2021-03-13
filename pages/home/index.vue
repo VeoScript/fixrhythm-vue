@@ -1,6 +1,7 @@
 <template>
   <div class="h-screen flex">
     <sidebar />
+    <h5>This is Home</h5>
   </div>
 </template>
 
