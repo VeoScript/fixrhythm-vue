@@ -32,9 +32,7 @@
           <hr />
         </div>
         <div class="form-control w-full mb-2">
-          <nuxt-link to="create-account">
-            <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none">Create Account</button>
-          </nuxt-link>
+          <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none" @click.stop.prevent="gotoCreateAccount">Create Account</button>
         </div>
         <div class="form-control w-full -mb-3">
           <p class="mr-2 text-right text-xs text-gray-500">Fixrhythm &copy; {{ new Date().getFullYear() }}</p>
@@ -57,6 +55,9 @@ export default {
   methods: {
     onLogin() {
       this.$router.push('home')
+    },
+    gotoCreateAccount() {
+      this.$router.push('create-account')
     }
   }
 }
