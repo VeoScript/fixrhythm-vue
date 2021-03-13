@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex items-center justify-center">
     <div class="flex">
-      <div class="form-card rounded-xl w-96 xs:w-80 sm:w-80 md:w-80 border shadow-lg p-5 mt-5 ml-10 mr-10 bg-white">
+      <div class="form-card rounded-xl w-full border shadow-lg mx-3 p-5 bg-white">
         <div class="top flex">
           <div class="button">
             <nuxt-link to="/">
