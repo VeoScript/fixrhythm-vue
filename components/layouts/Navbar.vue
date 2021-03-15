@@ -10,7 +10,21 @@
             <nuxt-link to="/profile">
               <img class="h-8 w-8 rounded-full ring-2 ring-gray-700" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
             </nuxt-link>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-100" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
+            <div class="relative">
+              <button class="mt-2" @click.prevent="dropdown = !dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-100" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
+              </button>
+              <div class="absolute bg-gray-200 w-44 shadow-lg mt-3 rounded-sm right-0" v-show="dropdown">
+                <ul class="flex flex-col items-center p-2">
+                  <li class="w-full">
+                    <nuxt-link class="font-semibold text-sm text-gray-900" to="/">Logout</nuxt-link>
+                  </li>
+                  <li class="w-full">
+                    <nuxt-link class="font-semibold text-sm text-gray-900" to="/">Settings</nuxt-link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -20,6 +34,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      dropdown: false
+    }
+  },
+
   computed: {
     title() {
       let currentPath = this.$route.fullPath
