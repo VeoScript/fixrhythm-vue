@@ -1,42 +1,44 @@
 <template>
-  <perfect-scrollbar>
-    <div class="desktop-display min-h-full p-10 w-64 hidden md:flex flex-col text-white border-r-2 border-red-500 bg-gray-900">
-      <div class="flex items-center justify-center">
-        <div class="block">
-          <nuxt-link to="home">
-            <div class="text-4xl mb-10 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
-          </nuxt-link>
-          <ul>
-            <li v-for="(link, i) in links" :key="i">
-              <nuxt-link class="flex p-3 mb-2 w-full rounded-3xl transition duration-300 ease-in-out hover:bg-gray-800" :class="$route.path === link.goto ? 'bg-gray-800' : 'bg-gray-900'" :to="link.goto">
-                <span v-html="link.icon"></span>
-                <span class="text-lg font-bold">{{ link.title }}</span>
-              </nuxt-link>
-            </li>
-          </ul>
-          <div class="btn-create mt-10 text-center">
-            <button class="font-bold p-3 w-full rounded-3xl bg-red-600 hover:bg-red-700 focus:outline-none">
-              Compose
-            </button>
-          </div>
-          <div class="w-full mt-10">
-            <p class="mr-2 text-center text-xs text-gray-500">&copy; {{ new Date().getFullYear() }} Fixrhythm, <br/> <span class="font-thin">Developed with &#10084; by VEOSCRIPT</span></p>
+  <div class="flex">
+    <perfect-scrollbar>
+      <div class="desktop-display min-h-full p-10 w-64 hidden md:flex flex-col text-white border-r-2 border-red-500 bg-gray-900">
+        <div class="flex items-center justify-center">
+          <div class="block">
+            <nuxt-link to="home">
+              <div class="text-4xl mb-10 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
+            </nuxt-link>
+            <ul>
+              <li v-for="(link, i) in links" :key="i">
+                <nuxt-link class="flex p-3 mb-2 w-full rounded-3xl transition duration-300 ease-in-out hover:bg-gray-800" :class="$route.path === link.goto ? 'bg-gray-800' : 'bg-gray-900'" :to="link.goto">
+                  <span v-html="link.icon"></span>
+                  <span class="text-lg font-bold">{{ link.title }}</span>
+                </nuxt-link>
+              </li>
+            </ul>
+            <div class="btn-create mt-10 text-center">
+              <button class="font-bold p-3 w-full rounded-3xl bg-red-600 hover:bg-red-700 focus:outline-none">
+                Compose
+              </button>
+            </div>
+            <div class="w-full mt-10">
+              <p class="mr-2 text-center text-xs text-gray-500">&copy; {{ new Date().getFullYear() }} Fixrhythm, <br/> <span class="font-thin">Developed with &#10084; by VEOSCRIPT</span></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="mobile-display fixed bottom-0 w-full">
-      <nav class="md:hidden bottom-0 w-full bg-gray-900 text-xs">
-        <ul class="flex justify-around items-center text-white text-center text-lg font-bold">
-          <li v-for="(linkmob, i) in linksMobile" :key="i">
-            <nuxt-link class="flex p-4 transition duration-300 ease-in-out hover:bg-gray-800" :class="$route.path === linkmob.goto ? 'bg-gray-800' : 'bg-gray-900'" :to="linkmob.goto">
-              <span :class="$route.path === linkmob.goto ? 'text-yellow-400' : 'text-white'" v-html="linkmob.icon"></span>
-            </nuxt-link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </perfect-scrollbar>
+      <div class="mobile-display fixed bottom-0 w-full">
+        <nav class="md:hidden bottom-0 w-full bg-gray-900 text-xs">
+          <ul class="flex justify-around items-center text-white text-center text-lg font-bold">
+            <li v-for="(linkmob, i) in linksMobile" :key="i">
+              <nuxt-link class="flex p-4 transition duration-300 ease-in-out hover:bg-gray-800" :class="$route.path === linkmob.goto ? 'bg-gray-800' : 'bg-gray-900'" :to="linkmob.goto">
+                <span :class="$route.path === linkmob.goto ? 'text-yellow-400' : 'text-white'" v-html="linkmob.icon"></span>
+              </nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </perfect-scrollbar>
+  </div>
 </template>
 
 <script>
