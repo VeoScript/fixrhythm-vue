@@ -1,12 +1,11 @@
 <template>
-  <div class="p-5 flex items-center justify-center overflow-hidden bg-gray-50">
+  <div class="h-screen flex flex-row items-center m-2 lg:m-0 justify-around overflow-hidden bg-gray-50">
     <div class="hidden ml-10 md:block">
       <div class="text-5xl mb-3 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
       <div class="text-xl">Compose your ideas, share it to the world.<br/>Develop your skills in poetry and song composition.</div>
     </div>
     <div class="flex flex-col w-96 lg:w-1/3 xl:w-1/3 p-6">
-      <div class="flex flex-col items-center justify-center mx-10 my-5 md:hidden">
-        <img class="w-10 h-10" src="~/assets/img/logo.png" alt="fixrhythm">
+      <div class="flex flex-col items-center mx-10 my-5 md:hidden">
         <div class="text-4xl text-center font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
         <div class="text-xs text-center mt-2">Poetry, Arts & Music</div>
       </div>
