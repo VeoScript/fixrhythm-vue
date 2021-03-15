@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="flex">
     <div class="fixed top-0 w-full">
-      <nav class="top-0 w-full bg-gray-900 text-xs">
-        <ul class="flex justify-around items-center text-center text-white text-lg font-bold">
+      <nav class="top-0 w-full bg-gray-900 p-3 text-xs">
+        <ul class="flex text-left text-white text-lg font-bold">
           <li>
-            <h5>{{ title }}</h5>
+            <h5 class="ml-5">{{ title }}</h5>
           </li>
         </ul>
       </nav>
