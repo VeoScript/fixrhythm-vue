@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="desktop-display fixed top-0 w-full">
+    <div class="fixed top-0 w-full">
       <nav class="top-0 w-full bg-gray-900 text-xs">
         <ul class="flex justify-around items-center text-center text-white text-lg font-bold">
           <li>
