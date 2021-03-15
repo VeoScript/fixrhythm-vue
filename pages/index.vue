@@ -2,7 +2,7 @@
   <div class="h-screen p-5 flex items-center justify-center overflow-hidden bg-gray-50">
     <div class="hidden ml-10 md:block">
       <div class="text-5xl mb-3 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
-      <div class="text-xl">Develop your skills in music. <br/> Compose your song and make it public to the world.</div>
+      <div class="text-xl">Compose your ideas, share it to the world.<br/>Develop your skills in poetry and song composition.</div>
     </div>
     <div class="flex flex-col w-96 lg:w-1/3 xl:w-1/3 p-6">
       <div class="block mx-10 my-5 md:hidden">
