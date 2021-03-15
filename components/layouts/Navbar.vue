@@ -1,26 +1,23 @@
 <template>
   <div class="flex">
     <div class="fixed top-0 w-full">
-      <nav class="top-0 w-full bg-gray-900 p-3 text-xs">
+      <nav class="top-0 w-full bg-gray-900 shadow-xl p-3 text-xs">
         <ul class="flex relative text-left text-white text-lg font-bold">
           <li>
-            <h5 class="ml-5">{{ title }}</h5>
+            <h5 class="lg:ml-5 bg-red-600 px-3 py-1 rounded-full w-full text-base text-center tracking-tight">{{ title }}</h5>
           </li>
           <li class="absolute flex items-center inset-y-0 right-0 space-x-3">
             <nuxt-link to="/profile">
               <img class="h-8 w-8 rounded-full ring-2 ring-gray-700" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
             </nuxt-link>
             <div class="relative">
-              <button class="mt-2" @click.prevent="dropdown = !dropdown">
+              <button class="mt-2 focus:outline-none" @click.prevent="dropdown = !dropdown">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-100" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
               </button>
-              <div class="absolute bg-gray-200 w-44 shadow-lg mt-3 rounded-sm right-0" v-show="dropdown">
+              <div class="absolute bg-gray-200 w-44 shadow-lg mt-4 rounded-sm right-0" v-show="dropdown">
                 <ul class="flex flex-col items-center p-2">
-                  <li class="w-full">
-                    <nuxt-link class="font-semibold text-sm text-gray-900" to="/">Logout</nuxt-link>
-                  </li>
-                  <li class="w-full">
-                    <nuxt-link class="font-semibold text-sm text-gray-900" to="/">Settings</nuxt-link>
+                  <li class="flex w-44">
+                    <nuxt-link class="w-full font-semibold ml-2 text-sm text-gray-900" to="/">Logout</nuxt-link>
                   </li>
                 </ul>
               </div>
