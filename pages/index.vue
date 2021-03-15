@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen p-5 flex items-center justify-center overflow-hidden bg-gray-50">
+  <div class="p-5 flex items-center justify-center overflow-hidden bg-gray-50">
     <div class="hidden ml-10 md:block">
       <div class="text-5xl mb-3 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
       <div class="text-xl">Compose your ideas, share it to the world.<br/>Develop your skills in poetry and song composition.</div>
@@ -12,7 +12,7 @@
         <div class="text-4xl text-center font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
         <div class="text-xs text-center mt-2">Poetry, Arts & Music</div>
       </div>
-      <form class="form-card rounded-xl w-full border shadow-lg p-5 bg-white" @submit.stop.prevent="onLogin">
+      <form class="form-card rounded-xl w-full border shadow-lg p-5 bg-white" @submit.prevent="onLogin">
         <div class="form-control">
           <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">Log in</div>
         </div>
@@ -32,7 +32,7 @@
           <hr />
         </div>
         <div class="form-control w-full mb-2">
-          <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none" @click.stop.prevent="gotoCreateAccount">Create Account</button>
+          <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none" @click.prevent="gotoCreateAccount">Create Account</button>
         </div>
         <div class="form-control w-full -mb-3">
           <p class="mr-2 text-right text-xs text-gray-500">Fixrhythm &copy; {{ new Date().getFullYear() }}</p>
