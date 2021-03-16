@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center container px-5 my-10">
+  <div class="flex items-center justify-center container m-auto my-10">
     <div class="flex">
       <div class="form-card w-full rounded-xl border shadow-lg p-5 bg-white">
         <div class="top flex">
