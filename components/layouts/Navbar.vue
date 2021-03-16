@@ -14,10 +14,10 @@
               <button class="mt-2 focus:outline-none" @click.prevent="dropdown = !dropdown">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-100" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
               </button>
-              <div class="absolute bg-gray-200 w-44 shadow-lg mt-4 rounded-sm right-0" v-show="dropdown">
+              <div class="absolute bg-gray-900 w-44 shadow-lg mt-4 rounded-sm right-0" v-show="dropdown">
                 <ul class="flex flex-col items-center p-2">
-                  <li class="flex w-44">
-                    <nuxt-link class="w-full font-semibold ml-2 text-sm text-gray-900" to="/">Logout</nuxt-link>
+                  <li v-for="(droplink, i) in dropdownLink" :key="i" class="flex w-44 py-2 px-2">
+                    <nuxt-link class="w-full font-semibold ml-2 text-sm text-white" :to="droplink.goto">{{ droplink.title }}</nuxt-link>
                   </li>
                 </ul>
               </div>
@@ -33,10 +33,19 @@
 export default {
   data() {
     return {
-      dropdown: false
+      dropdown: false,
+      dropdownLink: [
+        {
+          title: 'Settings',
+          goto: '/settings'
+        },
+        {
+          title: 'Logout',
+          goto: '/'
+        }
+      ]
     }
   },
-
   computed: {
     title() {
       let currentPath = this.$route.fullPath
