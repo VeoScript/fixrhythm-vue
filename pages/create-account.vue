@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen mt-16 mb-16 lg:m-0 xl:m-0 p-5 flex items-center justify-center">
+  <div class="flex items-center justify-center container px-5 my-10">
     <div class="flex">
       <div class="form-card w-full rounded-xl border shadow-lg p-5 bg-white">
         <div class="top flex">

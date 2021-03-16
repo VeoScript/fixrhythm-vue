@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex flex-row items-center m-2 lg:m-0 justify-around overflow-hidden bg-gray-50">
+  <div class="flex items-center justify-around h-screen bg-gray-50">
     <div class="hidden ml-10 md:block">
       <div class="text-5xl mb-3 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
       <div class="text-xl">Compose your ideas, share it to the world.<br/>Develop your skills in poetry and song composition.</div>
