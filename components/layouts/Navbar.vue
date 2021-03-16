@@ -7,8 +7,9 @@
             <h5 class="lg:ml-5 bg-red-600 px-3 py-1 rounded-full w-full text-base text-center tracking-tight">{{ title }}</h5>
           </li>
           <li class="absolute flex items-center inset-y-0 right-0 space-x-3">
-            <nuxt-link to="/profile">
+            <nuxt-link class="flex" to="/profile">
               <img class="h-8 w-8 rounded-full ring-2 ring-gray-700" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
+              <span class="text-white ml-2 mt-1">Godbless</span>
             </nuxt-link>
             <div class="relative">
               <button class="mt-2 focus:outline-none" @click.prevent="dropdown = !dropdown">
