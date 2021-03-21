@@ -2,7 +2,11 @@
   <div class="h-screen flex">
     <sidebar />
     <navbar />
-    <h5>This is Home</h5>
+    <div class="relative mx-10 my-20 w-full">
+      <div class="absolute">
+        <div><h1>This is Home</h1></div>
+      </div>
+    </div>
   </div>
 </template>
 
