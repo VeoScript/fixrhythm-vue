@@ -1,8 +1,8 @@
 <template>
   <div class="fixed">
     <perfect-scrollbar>
-      <div class="desktop-display h-screen p-10 w-64 hidden md:flex flex-col text-white border-r-2 border-red-500 bg-gray-900">
-        <div class="flex items-center justify-center">
+      <div class="desktop-display h-screen hidden md:flex flex-col">
+        <div class="flex items-center justify-center  p-10 w-64 text-white border-r-2 border-red-500 bg-gray-900">
           <div class="block">
             <nuxt-link to="home">
               <div class="text-4xl mb-10 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
