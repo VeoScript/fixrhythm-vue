@@ -16,6 +16,15 @@
                 <span class="mr-1" v-html="ivote"></span> 350
                 <span class="mx-1" v-html="iunvote"></span> 98
               </div>
+              <div class="button-function relative">
+                <div class="absolute inset-y-0 right-0 -mt-16 mr-3">
+                  <div class="flex">
+                    <button class="focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current text-gray-600" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-4.5 14c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm4.5 0c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm4.5 0c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-body px-2 text-gray-900 font-semibold text-sm">
               <div class="discription whitespace-pre-line -mt-5 text-xl tracking-tighter">
