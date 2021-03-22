@@ -1,7 +1,7 @@
 <template>
-  <div class="flex">
+  <div class="fixed">
     <perfect-scrollbar>
-      <div class="desktop-display min-h-full p-10 w-64 hidden md:flex flex-col text-white border-r-2 border-red-500 bg-gray-900">
+      <div class="desktop-display h-screen p-10 w-64 hidden md:flex flex-col text-white border-r-2 border-red-500 bg-gray-900">
         <div class="flex items-center justify-center">
           <div class="block">
             <nuxt-link to="home">
@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="mobile-display fixed bottom-0 w-full">
+      <div class="mobile-display fixed bottom-0 mt-20 w-full">
         <nav class="md:hidden bottom-0 w-full border-t-2 border-red-600 bg-gray-900 text-xs">
           <ul class="flex justify-around items-center mx-2 text-white text-center text-lg font-bold">
             <li class="w-full" v-for="(linkmob, i) in linksMobile" :key="i">
