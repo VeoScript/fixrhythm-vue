@@ -2,14 +2,19 @@
   <div class="h-screen flex">
     <sidebar />
     <navbar />
-    <div class="relative mx-5 my-20 w-screen">
-      <div class="absolute w-full">
-       <div class="w-full px-3 py-3 rounded-md ring-1 ring-gray-100 shadow-sm bg-gray-50 text-gray-900">
-         <div class="c-head"><nuxt-link to="/fprofile">Sparkle Script</nuxt-link></div>
-         <div class="c-body my-3">
-           <div class="p-title">Limitado</div>
-         </div>
-       </div>
+    <div class="home-display w-screen">
+      <div class="mx-5 my-20">
+        <div class="card w-full">
+          <div class="card-main">
+            <div class="card-header block ml-2 font-black text-xl text-black">
+              Composed Title
+              <div class="subtitle font-light text-sm">Jerome Joseph Villaruel</div>
+            </div>
+            <div class="card-body mt-2 p-3 bg-gray-900 rounded-md">
+              this is the content of the song
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
