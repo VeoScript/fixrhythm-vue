@@ -2,21 +2,21 @@
   <div class="h-screen flex mb-10">
     <navbar />
     <sidebar />
-    <div class="home-display md:ml-64 lg:ml-64 mb-72 w-screen">
-      <div class="mx-5 my-20">
-        <nuxt-link to="/view-song">
-          <div class="card w-full mb-5">
+    <div class="home-display my-20 md:ml-64 lg:ml-64 mb-72 w-screen">
+      <div class="mx-5 mb-3" v-for="(card, i) in cards" :key="i">
+        <nuxt-link to="/view-song/">
+          <div class="card w-full">
             <div class="card-main block rounded-xl ring-1 ring-gray-300 p-5">
               <div class="block md:flex md:justify-between">
                 <div class="flex">
-                  <img class="h-16 w-16 rounded-full mr-2" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
-                  <span class="mt-2 font-black uppercase text-md text-gray-800">Limitado <br> <span class="font-light text-sm capitalize">Jerome Joseph Villaruel</span></span>
+                  <img class="h-16 w-16 rounded-full mr-2" :src="card.profile" alt="account_avatar">
+                  <span class="mt-2 font-black uppercase text-md text-gray-800">{{ card.title }} <br> <span class="font-light text-sm capitalize">{{ card.composer }}</span></span>
                 </div>
                 <div class="flex mt-1 md:m-0 md:w-1/2">
-                  This song was all about problems, depressions, stress and our capacity as a human. The real world that control our life and the time was an illusion, that we need our life more than our wants and luxuries.
+                  {{ card.description }}
                 </div>
-                <div class="flex items-center">
-                  <span class="mr-2" v-html="heart"></span>480
+                <div class="flex mt-3 md:m-0 items-center">
+                  <span class="mr-2" v-html="heart"></span>{{ card.reactions }}
                 </div>
               </div>
             </div>
@@ -38,6 +38,29 @@ export default {
   data () {
     return {
       heart: '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current text-red-600" viewBox="0 0 24 24"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>',
+      cards: [
+        {
+          profile: 'https://avatars.githubusercontent.com/u/80662581?s=460&u=c70b67eff73998308b5c1629f49f7d37eddde7e9&v=4',
+          title: 'Where is Babsy',
+          composer: 'Richlyn Hermosilla',
+          description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis odit voluptatibus illum culpa enim fugit, perferendis provident accusamus ducimus at cumque inventore dignissimos. Quidem amet est corrupti suscipit, consectetur rerum!',
+          reactions: '983'
+        },
+        {
+          profile: 'https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4',
+          title: 'Limitado',
+          composer: 'Jerome Joseph Villaruel',
+          description: 'This song was all about problems, depressions, stress and our capacity as a human. The real world that control our life and the time was an illusion, that we need our life more than our wants and luxuries.',
+          reactions: '739'
+        },
+        {
+          profile: 'https://avatars.githubusercontent.com/u/80662581?s=460&u=c70b67eff73998308b5c1629f49f7d37eddde7e9&v=4',
+          title: 'Kaligayahan kong makasama ka',
+          composer: 'Richlyn Hermosilla',
+          description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis odit voluptatibus illum culpa enim fugit, perferendis provident accusamus ducimus at cumque inventore dignissimos. Quidem amet est corrupti suscipit, consectetur rerum!',
+          reactions: '983'
+        }
+      ]
     }
   }
 }
