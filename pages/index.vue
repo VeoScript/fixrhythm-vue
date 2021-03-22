@@ -35,7 +35,7 @@
           <button class="p-3 w-full bg-red-800 rounded-lg text-white hover:bg-red-700 focus:outline-none" @click.prevent="gotoCreateAccount">Create Account</button>
         </div>
         <div class="form-control text-center block w-full -mb-3">
-          <p class="text-xs mb-2 text-gray-500">
+          <p class="text-xs text-right mb-2 text-gray-500">
             Fixrhythm &copy; {{ new Date().getFullYear() }}
           </p>
         </div>
