@@ -13,8 +13,8 @@
               </div>
               <div class="subtitle font- text-sm capitalize">Jerome Joseph Villaruel</div>
               <div class="rating mt-2 flex font-black text-xs text-gray-500">
-                <span class="mr-1" v-html="ivote"></span> 200
-                <span class="mx-1" v-html="iunvote"></span> 200
+                <span class="mr-1" v-html="ivote"></span> 350
+                <span class="mx-1" v-html="iunvote"></span> 98
               </div>
             </div>
             <div class="card-body px-2 text-gray-900 font-semibold text-sm">
