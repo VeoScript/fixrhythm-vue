@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex">
-    <sidebar />
     <navbar />
+    <sidebar />
     <h5>This is Songs</h5>
   </div>
 </template>

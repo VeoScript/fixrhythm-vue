@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex mb-10 overflow-hidden">
-    <sidebar />
     <navbar />
+    <sidebar />
     <div class="home-display w-screen">
       <div class="mx-5 my-20">
         <div class="card w-full mb-10">
