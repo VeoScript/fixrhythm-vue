@@ -2,7 +2,7 @@
   <div class="h-screen flex mb-10 overflow-hidden">
     <navbar />
     <sidebar />
-    <div class="home-display w-screen">
+    <div class="home-display md:ml-64 lg:ml-64 w-screen">
       <div class="mx-5 my-20">
         <div class="card w-full mb-10">
           <div class="card-main rounded-xl ring-1 ring-gray-300 p-2">
