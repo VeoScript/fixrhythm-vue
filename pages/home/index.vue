@@ -22,15 +22,6 @@
                 <button class="focus:outline-none mr-1" v-html="liked"></button><span class="text-blue-600">350</span>
                 <button class="focus:outline-none mx-1" v-html="unlike"></button><span class="text-red-600">85</span>
               </div>
-              <div class="button-function relative">
-                <div class="absolute inset-y-0 right-0 -mt-16 mr-3">
-                  <div class="flex">
-                    <p class="text-sm bg-gray-900 px-3 py-1 text-white rounded-full">
-                      Composer
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="card-body px-2 text-gray-900 font-semibold text-sm">
               <div class="discription whitespace-pre-line -mt-5 text-xl tracking-tighter">
