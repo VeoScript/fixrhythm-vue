@@ -11,7 +11,10 @@
       </div>
       <form class="form-card rounded-xl w-full border shadow-lg p-5 bg-white" @submit.prevent="onLogin">
         <div class="form-control">
-          <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">Log in</div>
+          <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">
+            Log in <br/>
+            <span class="text-gray-300 font-black uppercase text-sm">Underdevelopment!</span>
+          </div>
         </div>
         <div class="form-control w-full mb-2">
           <input class="p-3 w-full border-2 rounded-lg border-gray-300 focus:border-gray-500 focus:outline-none" v-model="loginData.email" type="text" placeholder="Email" />
@@ -35,7 +38,6 @@
           <p class="text-xs mb-2 text-gray-500">
             Fixrhythm &copy; {{ new Date().getFullYear() }}
           </p>
-          <span class="text-gray-300 font-black uppercase text-sm">Underdevelopment!</span>
         </div>
       </form>
     </div>
