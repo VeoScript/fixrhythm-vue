@@ -12,7 +12,7 @@
                   <img class="h-16 w-16 rounded-full mr-2" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
                   <div class="com_title mt-2 uppercase text-left font-black text-lg">
                     Limitado
-                    <div class="com_profile block font-thin text-sm capitalize">Jerome Joseph Villaruel</div>
+                    <div class="com_profile font-thin text-sm capitalize">Jerome Joseph Villaruel</div>
                   </div>
                   <span class="ml-2 mt-1 md:-ml-9 md:mt-1 lg:-ml-9 lg:mt-1" v-html="isong"></span>
                   <div class="com_discription hidden md:block md:w-1/2 md:ml-10 lg:block lg:w-1/2 lg:ml-10 text-sm">
