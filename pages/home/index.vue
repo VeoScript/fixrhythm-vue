@@ -1,10 +1,10 @@
 <template>
-  <div class="h-screen flex mb-10 overflow-hidden">
+  <div class="h-screen flex mb-10">
     <navbar />
     <sidebar />
-    <div class="home-display md:ml-64 lg:ml-64 w-screen">
+    <div class="home-display md:ml-64 lg:ml-64 mb-72 w-screen">
       <div class="mx-5 my-20">
-        <div class="card w-full mb-10">
+        <div class="card w-full mb-5">
           <div class="card-main rounded-xl ring-1 ring-gray-300 p-2">
             <div class="card-header ml-2 text-black uppercase">
               <div class="title flex font-black text-2xl">
@@ -19,7 +19,7 @@
             </div>
             <div class="card-body px-2 text-gray-900 font-semibold text-sm">
               <div class="discription whitespace-pre-line -mt-5 text-xl tracking-tighter">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita similique dolor dolores. Rem, consequuntur aspernatur. Illo ea, placeat ullam perferendis perspiciatis esse voluptatum. Tenetur adipisci soluta sapiente repellendus, placeat deserunt!
+                  This song was all about problems, depressions, stress and our capacity as a human. The real world that control our life and the time was an illusion, that we need our life more than our wants and luxuries. 
               </div>
             </div>
           </div>
