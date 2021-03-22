@@ -4,32 +4,32 @@
     <sidebar />
     <div class="home-display md:ml-64 lg:ml-64 mb-72 w-screen">
       <div class="mx-5 my-20">
-        <div class="card w-full mb-5">
-          <div class="card-main rounded-xl ring-1 ring-gray-300 p-2">
-            <div class="card-header ml-2 text-black uppercase">
-              <div class="title">
-                <nuxt-link class="flex font-black text-2xl" to="/view_song">
-                  limitado 
-                  <span class="ml-2" v-html="isong"></span>
-                </nuxt-link>
+        <nuxt-link to="/view-song">
+          <div class="card w-full mb-5">
+            <div class="card-main flex rounded-xl ring-1 ring-gray-300 p-5">
+              <div class="flex-auto">
+                <div class="flex">
+                  <img class="h-16 w-16 rounded-full mr-2" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
+                  <div class="com_title mt-2 uppercase text-left font-black text-lg">
+                    Limitado
+                    <div class="com_profile block font-thin text-sm capitalize">Jerome Joseph Villaruel</div>
+                  </div>
+                  <span class="ml-2 mt-1 md:-ml-9 md:mt-1 lg:-ml-9 lg:mt-1" v-html="isong"></span>
+                  <div class="com_discription hidden md:block md:w-1/2 md:ml-10 lg:block lg:w-1/2 lg:ml-10 text-sm">
+                    This song was all about problems, depressions, stress and our capacity as a human. The real world that control our life and the time was an illusion, that we need our life more than our wants and luxuries.
+                  </div>
+                </div>
               </div>
-              <div class="subtitle">
-                <nuxt-link class="font-text-sm capitalize" to="/view_profile">
-                  Jerome Joseph Villaruel
-                </nuxt-link>
-              </div>
-              <div class="rating mt-2 flex font-black text-xs text-gray-500">
-                <button class="focus:outline-none mr-1" v-html="liked"></button><span class="text-blue-600">350</span>
-                <button class="focus:outline-none mx-1" v-html="unlike"></button><span class="text-red-600">85</span>
-              </div>
-            </div>
-            <div class="card-body px-2 text-gray-900 font-semibold text-sm">
-              <div class="discription whitespace-pre-line -mt-5 text-xl tracking-tighter">
-                  This song was all about problems, depressions, stress and our capacity as a human. The real world that control our life and the time was an illusion, that we need our life more than our wants and luxuries. 
+              <div class="mobile-view flex-auto md:hidden lg:hidden">
+                <div class="flex">
+                  <div class="com_discription mt-24 -ml-32 text-sm">
+                    This song was all about problems, depressions, stress and our capacity as a human. The real world that control our life and the time was an illusion, that we need our life more than our wants and luxuries.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -56,8 +56,6 @@ export default {
       unlike: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"></path></svg>',
 
       unliked: '<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z"></path></svg>',
-
-      star: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>'
     }
   }
 }
