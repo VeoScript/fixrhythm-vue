@@ -13,7 +13,7 @@
         <div class="form-control">
           <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">
             Log in <br/>
-            <span class="text-gray-300 font-black uppercase text-sm">Underdevelopment!</span>
+            <span class="text-gray-300 font-black uppercase text-sm">Under Development!</span>
           </div>
         </div>
         <div class="form-control w-full mb-2">
