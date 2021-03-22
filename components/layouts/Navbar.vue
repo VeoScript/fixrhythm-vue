@@ -4,7 +4,7 @@
       <nav class="top-0 w-full bg-gray-900 shadow-xl p-3 text-xs">
         <ul class="flex relative text-left text-white text-lg font-bold">
           <li>
-            <h5 class="lg:ml-5 bg-red-600 px-3 py-1 rounded-full w-full text-base text-center tracking-tight">{{ title }}</h5>
+            <h5 class="lg:ml-64 md:ml-64 bg-red-600 px-3 py-1 rounded-full text-base text-center tracking-tight">{{ title }}</h5>
           </li>
           <li class="absolute flex items-center inset-y-0 right-0 space-x-3">
             <nuxt-link class="flex" to="/profile">
