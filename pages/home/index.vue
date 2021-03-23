@@ -6,7 +6,7 @@
       <div class="mx-5 mb-3" v-for="(card, i) in cards" :key="i">
         <nuxt-link to="/view-song/">
           <div class="card w-full">
-            <div class="card-main block rounded-xl ring-1 ring-gray-300 p-5">
+            <div class="card-main block shadow-md rounded-xl ring-1 ring-gray-300 p-5">
               <div class="block md:flex md:justify-between">
                 <div class="flex items-center">
                   <img class="h-16 w-16 rounded-full mr-2" :src="card.profile" alt="account_avatar">
