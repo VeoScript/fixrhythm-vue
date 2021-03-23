@@ -1,6 +1,7 @@
 <template>
   <div class="flex items-center justify-around h-screen bg-gray-50">
     <div class="hidden ml-10 md:block">
+      <span class="font-black mt-20 uppercase text-xs px-2 py-1 rounded-full bg-yellow-200 text-yellow-500">Under Development!</span>
       <div class="text-5xl mb-3 font-black uppercase"><span class="text-red-600">Fix</span>rhythm</div>
       <div class="text-xl">Compose your ideas, share it to the world.<br/>Develop your skills in poetry and song composition.</div>
     </div>
@@ -13,7 +14,6 @@
         <div class="form-control">
           <div class="font-semibold text-gray-600 text-2xl sm:text-xl md:text-xl lg:text-xl mb-5">
             Log in <br/>
-            <span class="text-gray-300 font-black uppercase text-sm">Under Development!</span>
           </div>
         </div>
         <div class="form-control w-full mb-2">
