@@ -10,9 +10,9 @@
             <input class="bg-gray-50 w-full text-black text-sm p-1 pl-3 rounded-full focus:outline-none" type="text" placeholder="Search songs, poems and composers">
           </li>
           <li class="absolute flex md:hidden lg:hidden items-center inset-y-0 right-0 space-x-3">
-            <nuxt-link class="flex" to="/profile">
-              <img class="h-8 w-8 rounded-full ring-2 ring-gray-700" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
-              <span class="text-white ml-2 mt-1">Jerome</span>
+            <nuxt-link class="flex items-center" to="/profile">
+              <img class="h-8 w-8 rounded-full ring-4 ring-black" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
+              <span class="text-white ml-2 font-thin text-sm">Jerome</span>
             </nuxt-link>
             <div class="relative">
               <button class="mt-2 focus:outline-none" @click.prevent="dropdown = !dropdown">
