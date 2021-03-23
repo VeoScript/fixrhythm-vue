@@ -7,7 +7,7 @@
             <h5 class="md:ml-72 bg-red-600 px-3 py-1 rounded-full text-base text-center tracking-tight">{{ title }}</h5>
           </li>
           <li class="hidden md:flex ml-2 w-full">
-            <input class="bg-gray-50 w-full text-black text-sm p-1 pl-3 rounded-full focus:outline-none" type="text" placeholder="Search">
+            <input class="bg-gray-50 w-full text-black text-sm p-1 pl-3 rounded-full focus:outline-none" type="text" placeholder="Search songs, poems and composers">
           </li>
           <li class="absolute flex md:hidden lg:hidden items-center inset-y-0 right-0 space-x-3">
             <nuxt-link class="flex" to="/profile">
