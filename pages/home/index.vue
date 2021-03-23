@@ -23,6 +23,7 @@
           </div>
         </nuxt-link>
       </div>
+      <div class="w-full h-24 md:hidden"></div>
     </div>
   </div>
 </template>
