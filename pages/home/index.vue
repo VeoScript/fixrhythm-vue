@@ -6,13 +6,13 @@
       <div class="mx-5 mb-3" v-for="(card, i) in cards" :key="i">
         <nuxt-link to="/view-song/">
           <div class="card w-full">
-            <div class="card-main block shadow-md rounded-xl ring-1 ring-gray-300 p-5">
+            <div class="card-main block transition duration-500 ease-in-out hover:shadow-lg rounded-xl ring-1 ring-gray-300 p-5">
               <div class="block md:flex md:justify-between">
-                <div class="flex items-center">
+                <div class="flex items-center md:w-60">
                   <img class="h-16 w-16 rounded-full mr-2" :src="card.profile" alt="account_avatar">
                   <span class="mt-2 font-black uppercase text-md text-gray-800">{{ card.title }} <br> <span class="font-light text-sm capitalize">{{ card.composer }}</span></span>
                 </div>
-                <div class="flex items-center justify-evenly mt-1 md:m-0 md:w-1/2">
+                <div class="flex items-center mt-1 md:m-0 md:w-1/2">
                   {{ card.description }}
                 </div>
                 <div class="flex mt-3 md:m-0 items-center">
@@ -23,7 +23,7 @@
           </div>
         </nuxt-link>
       </div>
-      <div class="w-full h-24 md:hidden"></div>
+      <div class="w-full h-24"></div>
     </div>
   </div>
 </template>
@@ -51,8 +51,57 @@ export default {
           profile: 'https://avatars.githubusercontent.com/u/80662581?s=460&u=c70b67eff73998308b5c1629f49f7d37eddde7e9&v=4',
           title: 'Pure heart',
           composer: 'Richlyn Hermosilla',
-          description: 'Kasiyahan ko lang ito',
+          description: 'Winning doesn’t always mean being first. Winning means you’re doing better than you’ve done before.',
+          reactions: '507'
+        },
+        {
+          profile: 'https://pbs.twimg.com/profile_images/1372834106577276933/fG7vy0A1_200x200.jpg',
+          title: 'The Movie',
+          composer: 'Lisa Manoban',
+          description: 'It always seems impossible until it is done.',
+          reactions: '10M'
+        },
+        {
+          profile: 'https://pbs.twimg.com/profile_images/1373104490946039808/6kYx-wiS_200x200.jpg',
+          title: 'Solo',
+          composer: 'Jennie Kim',
+          description: 'Keep your face to the sunshine and you cannot see a shadow.',
+          reactions: '15M'
+        },
+        {
+          profile: 'https://pbs.twimg.com/profile_images/1372774916097896455/ruwr9BXF_200x200.jpg',
+          title: 'On the Ground',
+          composer: 'Roseanne Park',
+          description: 'Once you replace negative thoughts with positive ones, you’ll start having positive results.',
+          reactions: '12M'
+        },
+        {
+          profile: 'https://pbs.twimg.com/profile_images/1342423201578532864/MXWr4IbZ_200x200.jpg',
+          title: 'Cherry Lips',
+          composer: 'Kim Jisoo',
+          description: 'When you are enthusiastic about what you do, you feel this positive energy. It’s very simple.',
+          reactions: '8M'
+        },
+        {
+          profile: 'https://pbs.twimg.com/profile_images/1347581305001701376/dJw9KHqd_200x200.jpg',
+          title: 'No matter what',
+          composer: 'Gecelle Cabodbod',
+          description: 'You’re braver than you believe, and stronger than you seem, and smarter than you think.',
+          reactions: '235'
+        },
+        {
+          profile: 'https://pbs.twimg.com/profile_images/1179711768148373504/hRjlK6qw_200x200.jpg',
+          title: 'Moshi Moshi',
+          composer: 'Jihad',
+          description: 'In every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make apositive impact.',
           reactions: '76'
+        },
+        {
+          profile: 'https://pbs.twimg.com/profile_images/1367689400520372227/VCUDhRrN_200x200.jpg',
+          title: 'Bumalik ka na saken',
+          composer: 'Maria Jhingky',
+          description: 'The only time you fail is when you fall down and stay down.',
+          reactions: '50'
         }
       ]
     }
