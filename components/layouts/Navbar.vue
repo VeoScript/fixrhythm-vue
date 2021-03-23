@@ -14,24 +14,40 @@
               <img class="h-8 w-8 rounded-full ring-4 ring-black" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
               <span class="text-white ml-2 font-thin text-sm">Jerome</span>
             </nuxt-link>
-            <div class="relative">
-              <button class="mt-2 focus:outline-none" @click.prevent="dropdown = !dropdown">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-100" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
-              </button>
-              <div class="absolute bg-gray-900 shadow-lg mt-4 rounded-sm right-0" v-show="dropdown">
-                <ul class="flex flex-col items-center p-2">
-                  <li v-for="(droplink, i) in dropdownLink" :key="i" class="flex w-44 py-2 px-2">
-                    <nuxt-link class="flex w-full font-semibold ml-2 text-sm text-white" :to="droplink.goto">
-                      <span class="fill-current text-white w-5 mr-3" v-html="droplink.icon"></span>
-                      {{ droplink.title }}
-                      </nuxt-link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <button class="focus:outline-none" @click.prevent="dropdown = !dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-gray-100" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
+            </button>
           </li>
         </ul>
       </nav>
+    </div>
+    <div class="relative z-0 md:hidden" v-show="dropdown">
+      <div class="fixed justify-center inset-x-0 bottom-0">
+        <div class="flex h-72">
+          <div class="w-full rounded-xl mx-5 py-5 text-center bg-gray-900 ring-2 ring-red-600 text-white">
+            <span class="font-bold text-lg">Menu</span>
+            <div class="flex justify-end -mt-5">
+              <button class="focus:outline-none" @click.prevent="dropdown = !dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 fill-current text-white mx-5" viewBox="0 0 24 24"><path d="M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"/></svg>
+              </button>
+            </div>
+            <div class="block my-5">
+              <div class="separator h-0.5 w-full bg-gray-800"></div>
+              <div class="w-full p-3 hover:bg-gray-800">
+                <nuxt-link class="" to="/home">Settings</nuxt-link>
+              </div>
+              <div class="separator h-0.5 w-full bg-gray-800"></div>
+              <div class="w-full p-3 hover:bg-gray-800">
+                <nuxt-link class="" to="/home">Terms and Condition</nuxt-link>
+              </div>
+              <div class="separator h-0.5 w-full bg-gray-800"></div>
+              <div class="w-full p-3 hover:bg-gray-800">
+                <nuxt-link class="" to="/home">Logout</nuxt-link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
