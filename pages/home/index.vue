@@ -2,7 +2,7 @@
   <div class="h-screen flex mb-10">
     <navbar />
     <sidebar />
-    <div class="home-display my-20 md:ml-64 lg:ml-64 w-screen">
+    <div class="home-display my-20 md:ml-72 w-screen">
       <div class="mx-5 mb-3" v-for="(card, i) in cards" :key="i">
         <nuxt-link to="/view-song/">
           <div class="card w-full">
