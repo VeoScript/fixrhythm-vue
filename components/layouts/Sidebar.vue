@@ -30,7 +30,7 @@
         <nav class="md:hidden bottom-0 w-full border-t-2 border-red-600 bg-gray-900 text-xs">
           <ul class="flex justify-around items-center mx-2 text-white text-center text-lg font-bold">
             <li class="w-full" v-for="(linkmob, i) in linksMobile" :key="i">
-              <nuxt-link class="flex justify-center p-4" :class="$route.path === linkmob.goto ? 'bg-red-800 rounded-xl transform -translate-y-6 origin-center rotate-6' : 'bg-gray-900'" :to="linkmob.goto">
+              <nuxt-link class="flex justify-center p-4" :class="$route.path === linkmob.goto ? 'bg-red-800 rounded-xl transform -translate-y-3 ring-4 ring-gray-900 origin-center rotate-6' : 'bg-gray-900'" :to="linkmob.goto">
                 <span :class="$route.path === linkmob.goto ? 'text-red-200' : 'text-white'" v-html="linkmob.icon"></span>
               </nuxt-link>
             </li>
