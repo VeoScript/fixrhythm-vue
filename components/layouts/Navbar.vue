@@ -21,16 +21,11 @@
         </ul>
       </nav>
     </div>
-    <div class="relative z-0 md:hidden" v-show="dropdown">
+    <div class="relative md:hidden" v-show="dropdown">
       <div class="fixed h-screen flex items-end justify-center inset-x-0 bottom-0" style="background-color: rgba(0,0,0,0.5)" @click.prevent="dropdown = !dropdown">
-        <div class="flex h-72 w-full">
+        <div class="flex mb-10 w-full">
           <div class="w-full rounded-xl mx-5 py-5 text-center bg-gray-900 ring-2 ring-red-600 text-white">
-            <span class="font-bold text-lg">Menu</span>
-            <div class="flex justify-end -mt-5 mb-8">
-              <button class="focus:outline-none">
-                <svg class="w-4 h-4 mr-4 fill-current text-gray-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-              </button>
-            </div>
+            <div class="font-bold text-lg mb-5">Menu</div>
             <div class="block" v-for="(droplink, i) in dropdownLink" :key="i">
               <div class="separator h-0.5 w-full bg-gray-800"></div>
                 <nuxt-link :to="droplink.goto">
@@ -54,11 +49,15 @@ export default {
       dropdownLink: [
         {
           title: 'Settings',
-          goto: '/'
+          goto: '/settings'
         },
         {
-          title: 'Terms & Condition',
-          goto: '/'
+          title: 'About us',
+          goto: '/about'
+        },
+        {
+          title: 'Terms of Service',
+          goto: '/terms'
         },
         {
           title: 'Logout',
