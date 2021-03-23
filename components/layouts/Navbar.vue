@@ -22,28 +22,22 @@
       </nav>
     </div>
     <div class="relative z-0 md:hidden" v-show="dropdown">
-      <div class="fixed justify-center inset-x-0 bottom-0">
-        <div class="flex h-72">
+      <div class="fixed h-screen flex items-end justify-center inset-x-0 bottom-0" style="background-color: rgba(0,0,0,0.5)" @click.prevent="dropdown = !dropdown">
+        <div class="flex h-72 w-full">
           <div class="w-full rounded-xl mx-5 py-5 text-center bg-gray-900 ring-2 ring-red-600 text-white">
             <span class="font-bold text-lg">Menu</span>
-            <div class="flex justify-end -mt-5">
-              <button class="focus:outline-none" @click.prevent="dropdown = !dropdown">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 fill-current text-white mx-5" viewBox="0 0 24 24"><path d="M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z"/></svg>
+            <div class="flex justify-end -mt-5 mb-8">
+              <button class="focus:outline-none">
+                <svg class="w-4 h-4 mr-4 fill-current text-gray-100" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </button>
             </div>
-            <div class="block my-5">
+            <div class="block" v-for="(droplink, i) in dropdownLink" :key="i">
               <div class="separator h-0.5 w-full bg-gray-800"></div>
-              <div class="w-full p-3 hover:bg-gray-800">
-                <nuxt-link class="" to="/home">Settings</nuxt-link>
-              </div>
-              <div class="separator h-0.5 w-full bg-gray-800"></div>
-              <div class="w-full p-3 hover:bg-gray-800">
-                <nuxt-link class="" to="/home">Terms and Condition</nuxt-link>
-              </div>
-              <div class="separator h-0.5 w-full bg-gray-800"></div>
-              <div class="w-full p-3 hover:bg-gray-800">
-                <nuxt-link class="" to="/home">Logout</nuxt-link>
-              </div>
+                <nuxt-link :to="droplink.goto">
+                  <div class="w-full p-3 text-sm hover:bg-gray-800">
+                    {{ droplink.title }}
+                  </div>
+                </nuxt-link>
             </div>
           </div>
         </div>
@@ -61,6 +55,11 @@ export default {
         {
           title: 'Settings',
           icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"/></svg>',
+          goto: '/'
+        },
+        {
+          title: 'Terms & Condition',
+          icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 13v-4l8 7-8 7v-4h-6v-6h6zm0-6v-6h-16v18l8-7v-9h6v4h2z"/></svg>',
           goto: '/'
         },
         {
