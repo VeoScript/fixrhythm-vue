@@ -55,7 +55,7 @@ export default {
           reactions: '507'
         },
         {
-          profile: 'https://pbs.twimg.com/profile_images/1372834106577276933/fG7vy0A1_200x200.jpg',
+          profile: 'https://pbs.twimg.com/media/ExakeKmVgAUgkft?format=jpg&name=large',
           title: 'The Movie',
           composer: 'Lisa Manoban',
           description: 'It always seems impossible until it is done.',
