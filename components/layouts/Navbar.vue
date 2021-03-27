@@ -6,9 +6,10 @@
           <li>
             <h5 class="md:ml-72 bg-red-600 px-3 py-1 rounded-full text-base text-center tracking-tight">{{ title }}</h5>
           </li>
-          <li class="hidden md:flex ml-2 w-full">
-            <input class="bg-gray-50 w-full text-black text-sm p-1 pl-3 rounded-full focus:outline-none" type="text" placeholder="Search songs, poems and composers">
-          </li>
+          <form class="hidden md:flex ml-2 w-full">
+            <input class="bg-gray-50 w-full text-black text-sm p-1 pl-4 rounded-full focus:outline-none" type="text" placeholder="Search songs, poems and composers">
+            <button class="bg-red-600 rounded-full ml-2 py-1 px-3 ring-2 ring-red-900 font-medium text-sm focus:outline-none">Search</button>
+          </form>
           <li class="absolute flex md:hidden lg:hidden items-center inset-y-0 right-0 space-x-3">
             <nuxt-link class="flex items-center" to="/profile">
               <img class="h-8 w-8 rounded-full ring-4 ring-black" src="https://avatars.githubusercontent.com/u/26340308?s=460&u=f9dcea548505a99a2c873efb8b933aac0fe07abd&v=4" alt="account_avatar">
